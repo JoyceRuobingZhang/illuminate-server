@@ -13,9 +13,29 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
+from django.conf.urls import include
 from django.urls import path
+from rest_framework import routers
+from illuminateapi.views import register_user, login_user  # import view classes
 
+router = routers.DefaultRouter(trailing_slash=False)
+# router.register(r'services', Services, 'gametype')  # part of the controller.  "r" means regex
+# router.register(r'events', EventView, 'event')
+# router.register(r'posts', GameView, 'game')  
+# router.register(r'comments', ProfileView, 'profile')
+
+
+# controller-code
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('', include(router.urls)),
+    
+    # Requests to http://localhost:8000/register will be routed to the register_user function
+    path('register', register_user),
+    
+    # Requests to http://localhost:8000/login will be routed to the login_user function
+    path('login', login_user),
+    
+    path('api-auth', include('rest_framework.urls', namespace='rest_framework')),
+
 ]
+

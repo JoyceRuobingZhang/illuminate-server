@@ -1,0 +1,10 @@
+[
+    {
+        "model": "illuminateapi.appuser",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "bio": "All worries and anxieties are leaving my mind, making space for calmness and peace."
+        }
+    }
+]

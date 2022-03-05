@@ -2,7 +2,7 @@ from unicodedata import category
 from django.db import models
 from django.db.models.deletion import CASCADE
 from .appuser import AppUser
-from .category import Category
+from .categories import Category
 from illuminateapi.models import appuser
 
 
