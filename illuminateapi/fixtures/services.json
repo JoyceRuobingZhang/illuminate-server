@@ -1,0 +1,142 @@
+[
+    {
+        "model": "illuminate.services",
+        "pk": 1,
+        "fields": {
+            "name": "Vanderbilt Psychiatric Hospital · Double Oak Mental Health Services",
+            "location": "1601 23rd Ave S, Nashville, TN 37212",
+            "latitude": 36.138489,
+            "longitude": -86.804185,
+            "type": "Hospital", 
+            "email": "mentalhealth@vanderbilt.com",
+            "phone": "(615) 322-5000",
+            "rating": "3.7"
+        }
+    },
+    {
+        "model": "illuminate.services",
+        "pk": 2,
+        "fields": {
+            "name": "Mindful Wellness Nashville",
+            "location": "103 Powell Ct Suite 100, Brentwood, TN 37027",
+            "latitude": 36.038588, 
+            "longitude": -86.812703,
+            "type": "Private Practice",
+            "email": "mentalhealth@vanderbilt.com",
+            "phone": "(615) 400-5200",
+            "rating": "4.3"
+        }
+    },
+    {
+        "model": "illuminate.services",
+        "pk": 3,
+        "fields": {
+            "name": "Odyssey Mental Health",
+            "location": "1601 23rd Ave S, Nashville, TN 37212",
+            "latitude": 36.038753, 
+            "longitude": -86.803619,
+            "type": "Private Practice",
+            "email": "odysseymentalhealth@gmail.com",
+            "phone": "(615) 303-7700",
+            "rating": "4.5"
+        }
+    },
+    {
+        "model": "illuminate.services",
+        "pk": 4,
+        "fields": {
+            "name": "Integrative Life Center",
+            "location": "1104 16th Ave S, Nashville, TN 37212",
+            "latitude": 36.144209, 
+            "longitude": -86.792774, 
+            "type": "Residential Treatment Center",
+            "email": "integrativelifecenter@gmail.com",
+            "phone": "(615) 533-1860",
+            "rating": "4.1"
+        }
+    },
+    {
+        "model": "illuminate.services",
+        "pk": 5,
+        "fields": {
+            "name": "Vertava Health",
+            "location": "205 Reidhurst Ave, Nashville, TN 37203",
+            "latitude": 36.149267,
+            "longitude": -86.808634, 
+            "type": "Residential Treatment Center",
+            "email": "vertavahealth@gmail.com",
+            "phone": "(615) 433-1200",
+            "rating": "4.0"
+        }
+    },
+    {
+        "model": "illuminate.services",
+        "pk": 6,
+        "fields": {
+            "name": "The Next Door",
+            "location": "402 22nd Ave N, Nashville, TN 37203",
+            "latitude": 36.157619, 
+            "longitude":-86.807133, 
+            "type": "Residential Treatment Center",
+            "email": "rhenextdoor@gmail.com",
+            "phone": "(615) 765-2300",
+            "rating": "4.2"
+        }
+    },
+    {
+        "model": "illuminate.services",
+        "pk": 7,
+        "fields": {
+            "name": "Mental Health Partners",
+            "location": "762 E Argyle Ave, Nashville, TN 37203",
+            "latitude": 36.136591,
+            "longitude":  -86.778137,
+            "type": "Private Practice",
+            "email": "mentalhealthparters@gmail.com",
+            "phone": "(615) 477-5900",
+            "rating": "5.0"
+        }
+    },
+    {
+        "model": "illuminate.services",
+        "pk": 8,
+        "fields": {
+            "name": "Nashville Center for Hope & Healing",
+            "location": "2125 Belcourt Ave, Nashville, TN 37212",
+            "latitude": 36.136853, 
+            "longitude": -86.803122,
+            "type": "Private Practice",
+            "email": "mentalhealthparters@gmail.com",
+            "phone": "(615) 477-5900",
+            "rating": "5.0"
+        }
+    },
+    {
+        "model": "illuminate.services",
+        "pk": 9,
+        "fields": {
+            "name": "TriStar Centennial Parthenon Pavilion",
+            "location": "2401 Parman Pl, Nashville, TN 37203",
+            "latitude": 36.158791, 
+            "longitude": -86.81290,
+            "type": "Hospital", 
+            "email": "mentalhealth@tristar.com",
+            "phone": "(615) 375-3063",
+            "rating": "3.3"
+        }
+    },
+    {
+        "model": "illuminate.services",
+            "pk": 9,
+            "fields": {
+                "name": "Ascension Saint Thomas Behavioral Health Hospital",
+                "location": "300 Great Circle Rd, Nashville, TN 37228",
+                "latitude": 36.206454, 
+                "longitude": -86.789901,
+                "type": "Hospital", 
+                "email": "mentalhealth@tristar.com",
+                "phone": "(615) 375-3063",
+                "rating": "3.3"
+            }
+        }
+]
