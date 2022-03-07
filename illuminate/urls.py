@@ -16,10 +16,10 @@ Including another URLconf
 from django.conf.urls import include
 from django.urls import path
 from rest_framework import routers
-from illuminateapi.views import register_user, login_user  # import view classes
+from illuminateapi.views import register_user, login_user, ServiceView  # import view classes
 
 router = routers.DefaultRouter(trailing_slash=False)
-# router.register(r'services', Services, 'gametype')  # part of the controller.  "r" means regex
+router.register(r'services', ServiceView, 'services')  # part of the controller.  "r" means regex
 # router.register(r'events', EventView, 'event')
 # router.register(r'posts', GameView, 'game')  
 # router.register(r'comments', ProfileView, 'profile')
