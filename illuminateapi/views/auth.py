@@ -32,13 +32,14 @@ def login_user(request):
             'valid': True,
             'token': token.key,
             # 'user_id': authenticated_user.id  ❗️wrong!!! should always point to the actual gamer object 👇
-            'gamer_id': authenticated_user.appuser.id
+            'appuser_id': authenticated_user.appuser.id
         }
         return Response(data)
     else:
         # Bad login details were provided. So we can't log the user in.
         data = { 'valid': False }
         return Response(data)
+
 
 @api_view(['POST'])
 @permission_classes([AllowAny])
