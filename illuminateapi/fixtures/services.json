@@ -10,7 +10,9 @@
             "type": "Hospital", 
             "email": "mentalhealth@vanderbilt.com",
             "phone": "(615) 322-5000",
-            "rating": "3.7"
+            "rating": "3.7",
+            "sliding_scale": false,
+            "online": false
         }
     },
     {
@@ -24,7 +26,9 @@
             "type": "Private Practice",
             "email": "mentalhealth@vanderbilt.com",
             "phone": "(615) 400-5200",
-            "rating": "4.3"
+            "rating": "4.3",
+            "sliding_scale": true,
+            "online": true
         }
     },
     {
@@ -38,7 +42,9 @@
             "type": "Private Practice",
             "email": "odysseymentalhealth@gmail.com",
             "phone": "(615) 303-7700",
-            "rating": "4.5"
+            "rating": "4.5",
+            "sliding_scale": true,
+            "online": true
         }
     },
     {
@@ -52,7 +58,9 @@
             "type": "Residential Treatment Center",
             "email": "integrativelifecenter@gmail.com",
             "phone": "(615) 533-1860",
-            "rating": "4.1"
+            "rating": "4.1",
+            "sliding_scale": true,
+            "online": false
         }
     },
     {
@@ -66,7 +74,9 @@
             "type": "Residential Treatment Center",
             "email": "vertavahealth@gmail.com",
             "phone": "(615) 433-1200",
-            "rating": "4.0"
+            "rating": "4.0",
+            "sliding_scale": false,
+            "online": false
         }
     },
     {
@@ -80,7 +90,9 @@
             "type": "Residential Treatment Center",
             "email": "rhenextdoor@gmail.com",
             "phone": "(615) 765-2300",
-            "rating": "4.2"
+            "rating": "4.2",
+            "sliding_scale": true,
+            "online": true
         }
     },
     {
@@ -94,7 +106,9 @@
             "type": "Private Practice",
             "email": "mentalhealthparters@gmail.com",
             "phone": "(615) 477-5900",
-            "rating": "5.0"
+            "rating": "5.0",
+            "sliding_scale": true,
+            "online": true
         }
     },
     {
@@ -108,7 +122,9 @@
             "type": "Private Practice",
             "email": "mentalhealthparters@gmail.com",
             "phone": "(615) 477-5900",
-            "rating": "5.0"
+            "rating": "5.0",
+            "sliding_scale": true,
+            "online": true
         }
     },
     {
@@ -122,21 +138,25 @@
             "type": "Hospital", 
             "email": "mentalhealth@tristar.com",
             "phone": "(615) 375-3063",
-            "rating": "3.3"
+            "rating": "3.3",
+            "sliding_scale": false,
+            "online": false
         }
     },
     {
         "model": "illuminateapi.services",
-            "pk": 9,
-            "fields": {
-                "name": "Ascension Saint Thomas Behavioral Health Hospital",
-                "location": "300 Great Circle Rd, Nashville, TN 37228",
-                "latitude": 36.206454, 
-                "longitude": -86.789901,
-                "type": "Hospital", 
-                "email": "mentalhealth@tristar.com",
-                "phone": "(615) 375-3063",
-                "rating": "3.3"
-            }
+        "pk": 10,
+        "fields": {
+            "name": "Ascension Saint Thomas Behavioral Health Hospital",
+            "location": "300 Great Circle Rd, Nashville, TN 37228",
+            "latitude": 36.206454, 
+            "longitude": -86.789901,
+            "type": "Hospital", 
+            "email": "mentalhealth@tristar.com",
+            "phone": "(615) 375-3063",
+            "rating": "3.3",
+            "sliding_scale": false,
+            "online": false
+        }
         }
 ]

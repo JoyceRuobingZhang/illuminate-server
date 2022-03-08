@@ -30,7 +30,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+# 🔴 all capitalized convention means "constant", values you're not supposed to change
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',

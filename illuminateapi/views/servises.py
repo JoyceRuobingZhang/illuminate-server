@@ -19,12 +19,21 @@ class ServiceView(ViewSet):
         
         # Support filtering services by type： http://localhost:8000/services?type=1
         # That URL will retrieve all tabletop services
-        game_type = self.request.query_params.get('type', None)
-        if game_type is not None:
-            services = services.filter(gametype__id=game_type)
-            # gametype__id has to be a double-underscore.
-            # The use of the dunderscore (__) here represents a join operation (foreign-key table).
-            # for it's own table, do one underscore
+        service_type = self.request.query_params.get('type', None)
+        # import pdb; pdb.set_trace()
+        is_online = self.request.query_params.get('isOnline', None)
+        is_sliding_scale = self.request.query_params.get('isOnline', None)
+
+        if service_type:
+            services = services.filter(type=service_type)
+        
+        if is_online == "true":
+            services = services.filter(online=True)
+            
+        if is_sliding_scale == "true":
+            services = services.filter(sliding_scale=True)
+       
+    
 
         serializer = ServiceSerializer(
             services, many=True, context={'request': request})
@@ -40,6 +49,7 @@ class ServiceSerializer(serializers.ModelSerializer):
         serializer type  """
     class Meta:
         model = Services
-        fields = ('id', 'name', 'location', 'latitude', 'longitude', 'type', 'email', 'phone', 'rating') #the properties in the model
+        fields = ('id', 'name', 'location', 'latitude', 'longitude', 'type', 
+                  'email', 'phone', 'rating', 'sliding_scale', 'online') #the properties in the model
         depth = 2  # relationship depth  <10
         
