@@ -1,6 +1,6 @@
 from django.db import models
 from django.db.models.deletion import CASCADE
-from .posts import Post
+from .post import Post
 from .appuser import AppUser
 
 

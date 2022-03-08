@@ -1,0 +1,23 @@
+[
+    {
+        "model": "illuminateapi.category",
+        "pk": 1,
+        "fields": {
+            "label": "Body Movement"
+        }
+    },
+    {
+        "model": "illuminateapi.category",
+        "pk": 2,
+        "fields": {
+            "label": "Support Group"
+        }
+    },
+    {
+        "model": "illuminateapi.category",
+        "pk": 3,
+        "fields": {
+            "label": "Therapy Group"
+        }
+    }
+]

@@ -1,0 +1,81 @@
+[
+    {
+        "model": "illuminateapi.event",
+        "pk": 1,
+        "fields": {
+            "image_url": "https://wespark.org/wp-content/uploads/2021/08/Gental-Yoga.png",
+            "name": "Gentle Yoga and Relaxation",
+            "time": "2022-04-23T10:00:00.172Z",
+            "location": "Online",
+            "host": "RHI SPORTS",
+            "created_by": 1,
+            "category": 1
+        }
+    },
+    {
+        "model": "illuminateapi.event",
+        "pk": 2,
+        "fields": {
+            "image_url": "https://www.lethseniors.com/register/wp-content/uploads/2019/07/QiGong-2.jpg",
+            "name": "Health and Wellness with Qigong",
+            "time": "2022-05-23T10:00:00.172Z",
+            "location": "Online",
+            "host": "Human Harmonies Northwest",
+            "created_by": 1,
+            "category": 1
+        }
+    },
+    {
+        "model": "illuminateapi.event",
+        "pk": 3,
+        "fields": {
+            "image_url": "https://oxfordcc.org/wp-content/uploads/2020/09/Tai-Chi-is-_-word-cloud.jpeg",
+            "name": "Begin your Tai Chi Journey",
+            "time": "2022-05-7T10:00:00.172Z",
+            "location": "Online",
+            "host": "Quality of Life Now",
+            "created_by": 1,
+            "category": 1
+        }
+    },
+    {
+        "model": "illuminateapi.event",
+        "pk": 4,
+        "fields": {
+            "image_url": "https://lotuspilateslevent.com/wp-content/uploads/2018/12/reformer-pilates-slider3.jpg",
+            "name": "Saturday Pilates for strength and Calmness",
+            "time": "2022-05-6T10:00:00.172Z",
+            "location": "Online",
+            "host": "Fitness & Wellbeing",
+            "created_by": 1,
+            "category": 1
+        }
+    },
+    {
+        "model": "illuminateapi.event",
+        "pk": 5,
+        "fields": {
+            "image_url": "https://www.hungarianconservative.com/wp-content/uploads/2021/12/familypic.jpg",
+            "name": "Mental Health Support Group for Children/Parents/Families",
+            "time": "2022-05-14T14:00:00.172Z",
+            "location": "Online",
+            "host": "The National Collaboration for Youth Mental Health",
+            "created_by": 1,
+            "category": 2
+        }
+    },
+    {
+        "model": "illuminateapi.event",
+        "pk": 6,
+        "fields": {
+            "image_url": "https://cf.ppt-online.org/files/slide/j/JFysg3w7ItpOGW16d42zui5bnhCH98LxQRSoNK/slide-0.jpg",
+            "name": "Open Art Therapy Group",
+            "time": "2022-05-21T14:00:00.172Z",
+            "location": "Online",
+            "host": "Living Arts Therapy & Co-Design",
+            "created_by": 1,
+            "category": 3
+        }
+    }
+]
+
