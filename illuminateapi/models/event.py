@@ -1,3 +1,4 @@
+from datetime import date
 from django.db import models
 from django.db.models.deletion import CASCADE
 from .appuser import AppUser
