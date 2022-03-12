@@ -1,0 +1,35 @@
+[
+    {
+        "model": "illuminateapi.post",
+        "pk": 1,
+        "fields": {
+            "author": 1,
+            "publication_date": "2021-08-27T13:24:27.172Z",
+            "image_url": "https://www.forthealthcare.com/wp-content/uploads/2020/11/FHC-BH-Word-Cloud-1.jpg",
+            "content": "What mental health needs is more sunlight, more candor, and more unashamed conversation.",
+            "approved": true 
+        }
+    },
+    {
+        "model": "illuminateapi.post",
+        "pk": 2,
+        "fields": {
+            "author": 2,
+            "publication_date": "2020-05-30T18:30:30.172Z",
+            "image_url": "https://theflintridgepress.com/wp-content/uploads/2020/12/mental-health-excused-absences-800x686-1.jpg",
+            "content": "Mental health affects every aspect of your life. It’s not just this neat little issue you can put into a box.",
+            "approved": true 
+        }
+    },
+    {
+        "model": "illuminateapi.post",
+        "pk": 3,
+        "fields": {
+            "author": 3,
+            "publication_date": "2022-01-12T20:05:30.172Z",
+            "image_url": "https://d1dph1psyatsfa.cloudfront.net/bethesdamagazi/wp-content/uploads/2022/02/mental-health-logo-.jpg",
+            "content": "Happiness can be found even in the darkest of times, if one only remembers to turn on the light.",
+            "approved": true 
+        }
+    }
+]

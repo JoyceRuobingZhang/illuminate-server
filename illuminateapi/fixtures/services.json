@@ -1,9 +1,9 @@
 [
     {
-        "model": "illuminateapi.services",
+        "model": "illuminateapi.service",
         "pk": 1,
         "fields": {
-            "name": "Vanderbilt Psychiatric Hospital · Double Oak Mental Health Services",
+            "name": "Vanderbilt Psychiatric Hospital · Double Oak Mental Health service",
             "location": "1601 23rd Ave S, Nashville, TN 37212",
             "latitude": 36.138489,
             "longitude": -86.804185,
@@ -16,7 +16,7 @@
         }
     },
     {
-        "model": "illuminateapi.services",
+        "model": "illuminateapi.service",
         "pk": 2,
         "fields": {
             "name": "Mindful Wellness Nashville",
@@ -32,7 +32,7 @@
         }
     },
     {
-        "model": "illuminateapi.services",
+        "model": "illuminateapi.service",
         "pk": 3,
         "fields": {
             "name": "Odyssey Mental Health",
@@ -48,7 +48,7 @@
         }
     },
     {
-        "model": "illuminateapi.services",
+        "model": "illuminateapi.service",
         "pk": 4,
         "fields": {
             "name": "Integrative Life Center",
@@ -64,7 +64,7 @@
         }
     },
     {
-        "model": "illuminateapi.services",
+        "model": "illuminateapi.service",
         "pk": 5,
         "fields": {
             "name": "Vertava Health",
@@ -80,7 +80,7 @@
         }
     },
     {
-        "model": "illuminateapi.services",
+        "model": "illuminateapi.service",
         "pk": 6,
         "fields": {
             "name": "The Next Door",
@@ -96,7 +96,7 @@
         }
     },
     {
-        "model": "illuminateapi.services",
+        "model": "illuminateapi.service",
         "pk": 7,
         "fields": {
             "name": "Mental Health Partners",
@@ -112,7 +112,7 @@
         }
     },
     {
-        "model": "illuminateapi.services",
+        "model": "illuminateapi.service",
         "pk": 8,
         "fields": {
             "name": "Nashville Center for Hope & Healing",
@@ -128,7 +128,7 @@
         }
     },
     {
-        "model": "illuminateapi.services",
+        "model": "illuminateapi.service",
         "pk": 9,
         "fields": {
             "name": "TriStar Centennial Parthenon Pavilion",
@@ -144,7 +144,7 @@
         }
     },
     {
-        "model": "illuminateapi.services",
+        "model": "illuminateapi.service",
         "pk": 10,
         "fields": {
             "name": "Ascension Saint Thomas Behavioral Health Hospital",
