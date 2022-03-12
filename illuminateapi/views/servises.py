@@ -33,12 +33,9 @@ class ServiceView(ViewSet):
         if is_sliding_scale == "true":
             services = services.filter(sliding_scale=True)
        
-    
-
         serializer = ServiceSerializer(
             services, many=True, context={'request': request})
         
-        # serializer.data.append(gamer)
         return Response(serializer.data)
     
     
