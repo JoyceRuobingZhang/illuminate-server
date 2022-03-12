@@ -22,7 +22,7 @@ class ServiceView(ViewSet):
         service_type = self.request.query_params.get('type', None)
         # import pdb; pdb.set_trace()
         is_online = self.request.query_params.get('isOnline', None)
-        is_sliding_scale = self.request.query_params.get('isOnline', None)
+        is_sliding_scale = self.request.query_params.get('isSlidingScale', None)
 
         if service_type:
             services = services.filter(type=service_type)
