@@ -19,7 +19,7 @@ class UserSerializer(serializers.ModelSerializer):
     """JSON serializer for appuser's related Django user"""
     class Meta:
         model = User
-        fields = ('first_name', 'last_name', 'username')
+        fields = ('first_name', 'last_name', 'username', 'is_staff')
 
 class AppUserSerializer(serializers.ModelSerializer):
 
@@ -28,3 +28,4 @@ class AppUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = AppUser
         fields = ('id', 'bio', 'profile_img', 'signed_up_events', 'user')
+        depth = 2

@@ -97,9 +97,14 @@ class PostView(ViewSet):
         Returns:
             Response -- 200, 404, or 500 status code
         """
+        author = AppUser.objects.get(user=request.auth.user)
+
+        
         try:
             post = Post.objects.get(pk=pk)
-            post.delete()
+            
+            if author.id == post.author.id:
+                post.delete()
 
             return Response({}, status=status.HTTP_204_NO_CONTENT)
 
