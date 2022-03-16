@@ -45,6 +45,7 @@ class EventView(ViewSet):
         """
 
         event = Event()
+        event.image_url = request.data["image_url"]
         event.name = request.data["name"]
         event.time = request.data["time"]
         event.location = request.data["location"]
