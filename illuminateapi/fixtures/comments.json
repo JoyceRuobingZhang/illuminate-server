@@ -1,0 +1,22 @@
+[
+    {
+        "model": "illuminateapi.comment",
+        "pk": 1,
+        "fields": {
+            "content": "Thank you for sharing this!",
+            "publication_date": "2020-08-29T13:24:27.172Z",
+            "post": 18,
+            "author": 2
+        }
+    },
+    {
+        "model": "illuminateapi.comment",
+        "pk": 2,
+        "fields": {
+            "content": "Thank you for sharing this!",
+            "publication_date": "2022-01-29T20:30:02.172Z",
+            "post": 18,
+            "author": 1
+        }
+    }
+]

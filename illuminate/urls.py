@@ -18,14 +18,24 @@ from django.urls import path
 from rest_framework import routers
 from django.conf import settings
 from django.conf.urls.static import static
-from illuminateapi.views import register_user, login_user, ServiceView, EventView, CategoryView, PostView, AppuserView, get_auth_profile
+from illuminateapi.views import (
+    register_user, 
+    login_user, 
+    ServiceView, 
+    EventView, 
+    CategoryView, 
+    PostView, 
+    AppuserView, 
+    get_auth_profile,
+    CommentView)
 
 
 router = routers.DefaultRouter(trailing_slash=False) # not necessary to have "/" in the url
 router.register(r'services', ServiceView, 'services')  # part of the controller.  "r" means regex
 router.register(r'events', EventView, 'events')
 router.register(r'categories', CategoryView, 'categories')
-router.register(r'posts', PostView, 'posts')  
+router.register(r'posts', PostView, 'posts') 
+router.register(r'comments', CommentView, 'comments') 
 router.register(r'appusers', AppuserView, 'appusers')  
 
 # router.register(r'comments', ProfileView, 'profile')
