@@ -59,6 +59,10 @@ class PostView(ViewSet):
             Response -- JSON serialized list of posts
         """
         posts = Post.objects.all()
+        appuser = AppUser.objects.get(user=request.auth.user)
+
+        for post in posts:
+            post.liked = appuser in post.liked_by.all()
         
         # filter
         authorId = self.request.query_params.get('authorId', None)
@@ -132,6 +136,58 @@ class PostView(ViewSet):
         post.approved = True
         post.save()
         return Response({}, status=status.HTTP_204_NO_CONTENT)   
+    
+    
+    @action(methods=['get'], detail=False)
+    def favorites(self, request):
+        appuser = AppUser.objects.get(user=request.auth.user)
+            
+        try:
+            likedPosts = Post.objects.filter(liked_by=appuser)
+            
+            for post in likedPosts:
+                post.liked = appuser in post.liked_by.all()
+                
+            serializer = PostSerializer(likedPosts, many=True, context={'request': request})
+            return Response(serializer.data)   
+        
+        except Exception as ex:
+                return Response({'message': ex.args[0]}) 
+    
+    
+    # ⭕️⭕️⭕️ Custom Action for the specific url '/like'
+    @action(methods=['post', 'delete'], detail=True)
+    def like(self, request, pk=None): 
+        """Managing appusers liking posts"""
+     
+        appuser = AppUser.objects.get(user=request.auth.user)
+
+        try:
+            # Handle the case if the client specifies a event that doesn't exist
+            post = Post.objects.get(pk=pk)
+            
+        except Post.DoesNotExist:
+            return Response(
+                {'message': 'Post does not exist.'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+            
+        if request.method == "POST":
+            try:
+                post.liked_by.add(appuser)
+                return Response({}, status=status.HTTP_201_CREATED)
+            
+            except Exception as ex:
+                return Response({'message': ex.args[0]})
+
+        # User wants to leave a previously joined post
+        elif request.method == "DELETE":
+            try:
+                post.liked_by.remove(appuser)
+                return Response(None, status=status.HTTP_204_NO_CONTENT)
+            
+            except Exception as ex:
+                return Response({'message': ex.args[0]})
             
     
 class PostSerializer(serializers.ModelSerializer):
@@ -142,5 +198,5 @@ class PostSerializer(serializers.ModelSerializer):
     """
     class Meta:
         model = Post
-        fields = ('id', 'author', 'publication_date', 'image_url', 'content', 'approved')
+        fields = ('id', 'author', 'publication_date', 'image_url', 'content', 'approved', 'liked')
         depth = 3

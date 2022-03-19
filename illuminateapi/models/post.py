@@ -13,4 +13,11 @@ class Post(models.Model):
     # CharField: chunk of space, not flexible, faster when smaller; 
     # TextField: rows can be smaller, no attribute
    
+    @property
+    def liked(self):
+        return self.__liked
     
+    @liked.setter
+    def liked(self, value):
+        self.__liked = value
+        
