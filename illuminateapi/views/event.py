@@ -43,18 +43,18 @@ class EventView(ViewSet):
         Returns:
             Response -- JSON serialized event instance
         """
-
-        event = Event()
-        event.image_url = request.data["image_url"]
-        event.name = request.data["name"]
-        event.time = request.data["time"]
-        event.location = request.data["location"]
-        event.host = request.data["host"]
-        created_by = AppUser.objects.get(user=request.auth.user)
-        event.created_by = created_by
-        
-        category = Category.objects.get(pk=request.data["category_id"])
-        event.category = category
+        if request.auth.user.is_staff:
+            event = Event()
+            event.image_url = request.data["image_url"]
+            event.name = request.data["name"]
+            event.time = request.data["time"]
+            event.location = request.data["location"]
+            event.host = request.data["host"]
+            created_by = AppUser.objects.get(user=request.auth.user)
+            event.created_by = created_by
+            
+            category = Category.objects.get(pk=request.data["category_id"])
+            event.category = category
 
         try:
             event.save()
